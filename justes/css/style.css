@@ -1,0 +1,157 @@
+html{
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #515050;
+    text-align: center;
+    margin-top: 120px;
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #515050;
+}
+p{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px;
+    line-height: 22px;
+    color: #515050;
+}
+
+header{
+    position: relative;
+}
+.header-bg780,
+.header-bg600{
+    display: none;
+}
+.header-bg,
+.header-bg780,
+.header-bg600{
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: auto;
+}
+.header-list{
+    display: flex;
+    justify-content: right;
+    padding-top: 42px;
+    height: 43px;
+}
+.header-list li{
+    display: flex;
+    align-items: center;
+    height: 43px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header-list li img{
+    width: auto;
+    height: 100%;
+}
+h1{
+    margin-top: 250px;
+    margin-bottom: 30px;
+}
+header .button{
+    padding: 14px 90px;
+    background-color: rgba(71, 175, 235, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.about{
+    margin-top: 70%;
+}
+.about-img{
+    width: 100%;
+    height: auto;
+}
+.card{
+    border: none;
+    margin-top: 10px;
+}
+.card-body{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    margin: 34px 12px 0 12px;
+}
+.container-card{
+    margin: 0 40px;
+}
+.card-title{
+    margin-top: 100px;
+    margin-bottom: 33px;
+}
+.card-text{
+    padding-bottom: 90px;
+}
+.card-link{
+    color: #515050
+}
+.price img{
+    width: 10px;
+    height: 10px;
+    margin-left: -24px;
+    margin-right: 12px;
+}
+.price span{
+    font-weight: bold;
+}
+.contacts ul{
+    margin-top: 40px;
+}
+.contacts li img{
+    width: 32px;
+    height: 32px;
+    margin: 0 22px;
+}
+.contacts .tel a{
+    padding: 7px 63px;
+    background-color: rgba(71, 175, 235, 0.608);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.tel{
+    margin: 32px 0;
+}
+.mail a{
+    color: rgba(81, 80, 80, 1);
+}
+
+
+footer{
+    height: 330px;
+    background-color: #515050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+}
