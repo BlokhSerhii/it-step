@@ -1,0 +1,35 @@
+<div class="find-movie">
+    <label for="movieTitle">Назва фільму:</label>
+    <input type="text" id="movieTitle" [(ngModel)]="movieTitle" (keydown.enter)="searchMovie()"/>
+    <label for="movieYear">Рік:</label>
+    <input type="number" id="movieYear" [(ngModel)]="movieYear" (keydown.enter)="searchMovie()"/>
+    <p *ngIf="movieYear && !movieTitle">Введіть назву фільма!</p>
+    <button (click)="searchMovie()">Пошук</button>
+</div>
+  
+<div *ngIf="movie">
+    <div *ngIf="isMovie" class="movie">
+        <div class="item">
+            <img [src]="movie.Poster" alt="">
+        </div>
+        <div class="item">
+            <h2>{{ movie.Title }}</h2>
+            <p>Рік: {{ movie.Year }}</p>
+            <p>Рейтинг: {{ movie.imdbRating }}</p>
+            <p>Тривалість: {{ movie.Runtime }}</p>
+            <p>Режисер: {{ movie.Director }}</p>
+            <p>Актори: {{ movie.Actors }}</p> 
+            <p>
+                <label for="typeOfInfo">Опис</label>
+                <select id="typeOfInfo" [(ngModel)]="typeOfInfo">
+                    <option value="short">короткий</option>
+                    <option value="full">повний</option>
+                </select>
+            </p>
+            <p>{{ typeOfInfo === 'short' ? movie.Plot : movie.fullPlot }}</p>
+        </div>
+    </div>
+    <div *ngIf="errorMovie" class="movie">
+        <h1>{{ movie.Error }}</h1>
+    </div>
+</div>

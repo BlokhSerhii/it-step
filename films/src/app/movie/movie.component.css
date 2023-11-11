@@ -1,0 +1,49 @@
+.find-movie {
+    margin: 20px auto;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+select {
+    width: 100px;
+    border: none;
+    font-size: 1rem;
+}
+button {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+p {
+    margin: 5px 0px;
+    text-align: justify;
+}
+.movie {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+.item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
