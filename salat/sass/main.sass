@@ -1,0 +1,248 @@
+@import media.css
+@import '_const'
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
+.html, body
+    overflow-x: hidden
+.wrapper
+    max-width: 1920px
+    margin: 0 auto
+h1
+    font-family: $font-main
+    font-weight: $semi-bold
+    font-size: 75px
+    line-height: 140%
+    text-transform: uppercase
+    text-align: center
+    color: $hover-color
+h2
+    font-family: $font-main
+    font-weight: $semi-bold
+    font-size: 40px
+    line-height: 140% 
+    text-align: left
+    color: $text-color
+h3
+    font-family: $font-main
+    font-weight: $bold
+    font-size: 30px
+    line-height: 140% 
+    text-align: left
+    color: $text-color
+p
+    font-family: $font-main
+    line-height: 140%
+    color: $text-color
+    margin: 0px
+a
+    font-family: $font-main
+    font-weight: $semi-bold
+    line-height: 140%
+    text-decoration: none
+    color: $text-color
+.logo
+    // marginleft: 100px
+    font-size: 35px
+    line-height: 140%
+    white-space: nowrap
+    &__span
+        font-family: $font-italic
+        font-size: 55px
+        color: $hover-color
+.header
+    &__nav
+        width: 100%
+        height: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #E6E6E6
+    &__logo-card
+        margin-left: 100px
+    &__menu
+        margin: 0px
+        padding: 0px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    &__list
+        margin: 0px 10px
+    &__link
+        padding: 10px
+        font-size: 25px
+        line-height: 38px
+        font-weight: $medium
+        transform: 0.5s
+    &__link:hover
+        font-size: 25px
+        font-weight: $bold
+        color: $hover-color
+    &__search
+        width: 100px
+        height: 100px    
+    &__loop
+        width: 100%
+        height: 100%
+        padding: 20px 25px
+        transform: 0.5s
+    &__loop:hover
+        background-color: $hover-color
+        padding: 15px 20px
+    &__caption
+        background: url('../img/main page.png') top center no-repeat
+        background-size: 100% auto
+        width: 100%
+        display: flex
+        justify-content: end
+    &__text-block
+        margin: 13% 25px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        flex: 0 1 50%
+    &__text
+        font-family: $font-italic
+        font-size: 65px
+        line-height: 160%
+.page
+    position: relative
+    &__button
+        position: sticky
+        left: 95vw
+        top: 50vh
+        width: 40px
+        height: 40px
+        background-color: $text-color
+        border-radius: 25px
+        opacity: 0.15
+    &__arrow-up
+        padding: 4px
+        width: auto
+        height: 100%  
+    &__recipes
+        margin-top: 100px 
+    &__line
+        margin: 20px 0px
+    &__line:not([size])
+        height: 2px
+    &__recipes-text
+        font-size: 25px
+        font-weight: $semi-bold
+    &__recipes-item
+        margin-top: 50px
+        width: 100%
+        height: auto
+        display: flex
+        justify-content: center
+        align-items: start
+    &__recipes-card
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__recipes-img
+        width: 100%
+        height: auto
+    &__block-link
+        margin-top: -15px
+        width: 70%
+        height: auto
+        display: flex
+        justify-content: center
+        align-items: center
+    &__recipes-link
+        padding: 10px 5px
+        width: 100%
+        font-size: 19px
+        color: #fff
+        text-align: center
+        white-space: nowrap
+        background-color: $hover-color
+        border-radius: 15px
+        transform: 0.5s
+    &__recipes-link:hover
+        color: $text-color
+    &__community
+        margin-top: 100px
+    &__community-img
+        width: 100%
+        height: auto
+    &__community-item
+        height: 100%
+        padding: 25px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: start
+    &__community-text
+        padding: 25px 0px
+        font-size: 22px
+        font-weight: $medium
+    &__community-link
+        padding: 12px 42px
+        font-size: 22px
+        font-weight: $semi-bold
+        color: #fff
+        background-color: $hover-color
+        border-radius:  10px
+        transform: 0.5s
+    &__community-link:hover
+        color: $text-color 
+    &__about
+        margin-top: 70px  
+    &__about-block
+        background: url('../img/main about.png') top center no-repeat
+        background-size: cover
+        width: 100%
+        height: auto
+        display: inline-block
+        flex-direction: column
+    &__about-item
+        padding: 15% 0px
+    &__about-text
+        font-size: 25px
+        font-weight: $semi-bold
+        line-height: 180%
+    &__about-span
+        margin: 5px 20px
+        font-family: $font-italic
+        font-size: 70px
+        text-align: right
+.footer
+    margin-top: 70px
+    height: 175px
+    display: flex
+    align-items: center
+    background-color: #E6E6E6
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__social
+        display: flex
+        justify-content: start
+        align-items: center
+    &__item-text
+        padding: 0px 20px
+        font-size: 25px
+        font-weight: $medium
+        line-height: 100%
+    &__social-item
+        margin: 0px
+        padding: 0px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__list
+        padding: 0px 4px
+        height: 30px
+    &__social-img
+        width: auto
+        height: 100%
+    &__down-case
+        display: flex
+        flex: 0 1 65%
+        width: 100%
+        align-items: center
+        justify-content: space-between
