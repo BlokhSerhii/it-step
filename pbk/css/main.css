@@ -1,0 +1,727 @@
+@font-face {
+  font-family: 'InterRegular';
+  src: url('../fonts/InterRegular.eot');
+  src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+    url('../fonts/InterRegular.woff2') format('woff2'),
+    url('../fonts/InterRegular.woff') format('woff'),
+    url('../fonts/InterRegular.ttf') format('truetype'),
+    url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+html{
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.container-in{
+  margin: 0px 100px;
+}
+h1{
+  margin-top: 10px;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+h2{
+  font-family: 'InterRegular', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2E2E2E;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3{
+  font-family: 'InterRegular', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #fff;
+}
+p{
+  margin-bottom: 0px;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2E2E2E;
+}
+a{
+  text-decoration: none;
+}
+/*----------------------------------заголовок карусель-----------------------------------*/
+.carousel-item{
+  height: 100vh;
+}
+/*--------------------------------блок головного меню-----------------------------------*/
+header{
+  position: relative;
+}
+.header-content{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  text-align: center;
+}
+.header-block{
+  width: 440px;
+  height: 100vh;
+  padding: 0px 40px;
+  background-color: rgb(50, 50, 50, 0.7);
+  backdrop-filter: blur(6px);
+}
+/* --------------------бургер-------------------------------------- */
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 35px;
+  left: 40px;
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -4px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 4px;
+}
+.hamburger-p{
+  position: absolute;
+  left: 27px;
+  top: -5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 550px;
+  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: rgb(50, 50, 50, 0.7);
+  backdrop-filter: blur(16px);
+}
+.lang{
+  display: inline-flex;
+  margin: 0 -90px 0 0;
+}
+.menu__box li>.menu__item,
+.menu__box li>.menu__item-green{
+  margin-right: -90px;
+}
+.menu__box .menu__item-green,
+.lang .menu__item-green{
+  padding: 0px 5px;
+  margin-top: 35px;
+  display: inline-block;
+  color: #29A500;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 16px;
+  font-weight: 530;
+  line-height: 20px;
+  transition: 0.1s;
+}
+.menu__item{
+  padding: 0px 5px;
+  margin-top: 35px;
+  display: inline-block;
+  color: #fff;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: 0.1s;
+}
+.menu__item:hover {
+  color: #29A500;
+  transform: scale(1.02);
+}
+.menu__item-green:hover{
+  transform: scale(1.02);
+  color: #29A500;
+  font-weight: 500;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: -100px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .50s;
+}
+.menu__box {
+  transition-duration: .50s;
+}
+/* --------------------бургер/-------------------------------------- */      
+.header-logo{
+  margin-top: 10vw;
+  width: 56px;
+  height: auto;
+}
+.header-tel-button{
+  margin-top: 23px;
+}
+.header-tel-a{
+  padding: 5px 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+.header-tel-a:hover {
+  border: 1px solid #29A500;
+  color: #fff;
+  background-color: #29A500;
+}
+.header-soc{
+  margin-top: 70px;
+  display: inline-flex;
+  height: 23px;
+  align-items: center;
+
+}
+.header-soc-a{
+  margin: 0px 25px;
+}
+.header-soc-a img{
+  height: 100%;
+  transition: 0.4s;
+}
+.header-soc-a img:hover{
+  transform: scale(1.25);
+}
+/*------------------------------картки послуг-----------------------------------------*/
+.header-menu{
+  position: absolute;
+  top: 95vh;
+  left: 0px;
+  /* left: 7px; */
+  width: 100%;
+  z-index: 3;
+}
+.menu-col{
+  padding: 4px;
+  transition: 0.4s;
+}
+.menu-p{
+  font-family: 'InterRegular', sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #2E2E2E;
+}
+.menu-item{
+  height: 100%;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.32);
+}
+.menu-col:hover{
+  margin-top: -15px;
+}
+.menu-img{
+  margin: 25px 0px 10px 0px;
+}
+/*---------------------------------картки послуг/---------------------------------------*/
+/*------------------------------------про нас-------------------------------------------*/
+.about-h2{
+  margin-top: 240px;
+  margin-bottom: 13px;
+  font-weight: 400; 
+  line-height: 20px;
+  text-align: center;
+}
+.about-text{
+  max-width: 710px;
+  margin: 0px auto;
+}
+.about-text-p{
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 55px;
+}
+.about-list{
+  max-width: 445px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-ul-caption{
+  font-weight: 400;
+  line-height: 20px;
+}
+.about-li{
+  list-style: disc;
+  font-family:'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*------------------------------------про нас/-------------------------------------------*/
+/*----------------------------------абстракція-------------------------------------------*/
+.abstract-img{
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+/*---------------------------------абстракція/-------------------------------------------*/
+/*------------------------------------результати-----------------------------------------*/
+.rezalt{
+  margin: 60px auto 0px auto;
+  max-width: 460px;
+  text-align: center;
+}
+.rezalt-item{
+  margin-top: 50px;
+}
+.rezalt-title{
+  padding-bottom: 10px;
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;  
+  color: #29A500;
+}
+.rezalt-mail{
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #2E2E2E;
+}
+.rezalt-button{
+  margin-top: 60px;
+  display: inline-block;
+  padding: 12px 75px;
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #29A500;
+  transition: 0.5s;
+}
+.rezalt-button:hover{
+  color: #29A500;
+  border: 1px solid #29A500;
+  background-color: #fff;
+}
+/*------------------------------------результати/-----------------------------------------*/
+/*-------------------------------------партнери-------------------------------------------*/
+.partners{
+  margin-top: 200px;
+}
+.slider{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  min-width: 0;
+  margin-top: 10px;
+  position: relative;
+  padding: 0 30px;
+}
+.slick-list {
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slick-slide{
+  height: 87%;
+}
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 40px 20px;
+  margin: 20px 8px;
+  align-items: flex-start;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.09);
+}
+.slider__item span {
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #29A500;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 10px;
+  height: 15px;
+}
+.slick-prev {
+  left: 0;
+  background: url("../img/arrow-left.png") 0 0 /100% no-repeat;
+}
+.slick-next {
+  right: 0;
+  background: url("../img/arrow-right.png") 0 0 /100% no-repeat;
+}
+.slider .slick-dots button:before {
+  font-size: 0;
+}
+.slider .slick-dots{
+  display: flex;
+  justify-content: center;
+}
+.slider .slick-dots li{
+  list-style: none;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #B3B3B3;
+  border-radius: 50%;
+}
+/*-------------------------------------партнери/------------------------------------------*/
+/*--------------------------------------карти---------------------------------------------*/
+.map{
+  margin-top: 210px;
+  text-align: center;
+}
+.map-link{
+  margin-top: 30px;
+  width: 100%;
+  height: 480px;
+}
+/*--------------------------------------карти/-------------------------------------------*/
+/*-------------------------------------контакти-------------------------------------------*/
+.contacts{
+  margin-top: 210px;
+  text-align: center;
+}
+.contacts-item{
+  margin-top: 24px;
+  font-size: 12px;
+}
+.contacts-title{
+  padding-bottom: 10px;
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.contacts-mail{
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #2E2E2E;
+}
+.contacts-button{
+  padding: 7px 40px;
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #29A500;
+  transition: 0.5s;
+}
+.contacts-button:hover{
+  color: #29A500;
+  border: 1px solid #29A500;
+  background-color: #fff;
+}
+.contacts-soc{
+  margin: 50px 0px 0px 0px;
+  padding: 0px;
+  height: 35px;
+  width: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+.contacts-link{
+  padding: 0px 20px;
+}
+.contacts-img{
+  height: 100%;
+  width: auto;
+  transition: 0.4s;
+}
+.contacts-img:hover{
+  opacity: 0.5;
+}
+/*------------------------------------контакти/------------------------------------------*/
+/*--------------------------------------футер--------------------------------------------*/
+.footer{
+  margin-top: 300px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(0, 0%, 20%, 0.704);
+}
+.footer-row{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo{
+  margin: 10px auto;
+  height: 60px;
+  width: auto;
+}
+.footer-row p{
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+/*--------------------------------------футер/-------------------------------------------*/
+/*-----------------------------------про об'єкти-----------------------------------------*/
+.object-text{
+  max-width: 530px;
+  margin: 120px auto 70px auto;
+}
+.object-text .about-text-p{
+  margin-bottom: 0px;
+}
+.object-list{
+  display: flex;
+  flex-direction: column;
+}
+.object-ul-caption{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #29A500;
+}
+.object-list .about-li{
+  margin-bottom: 20px;
+}
+/*-----------------------------------про об'єкти/----------------------------------------*/
+/*-------------------------------------приклади------------------------------------------*/
+.example{
+  margin-top: 80px;
+}
+.example-card{
+  display: flex;
+  flex-direction: column;
+}
+.example-img{
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+}
+/*-------------------------------------приклади/----------------------------------------*/
+/*-----------------------------------ціни об'єкти-----------------------------------------*/
+.price h2{
+  margin-top: 160px;
+}
+.price-text{
+  max-width: 530px;
+  margin: 0px auto;
+}
+.price-list{
+  display: flex;
+  flex-direction: column;
+}
+.price-caption{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #29A500;
+}
+.price-list{
+  margin-bottom: 20px;
+}
+.price-button{
+  margin-top: 80px;
+}
+.price-a{
+  padding: 7px 60px;
+  font-family: 'InterRegular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #29A500;
+  transition: 0.5s;
+}
+.price-a:hover{
+  color: #29A500;
+  border: 1px solid #29A500;
+  background-color: #fff;
+}
+/*-----------------------------------ціни об'єкти/----------------------------------------*/
+/*-------------------------------------креслення------------------------------------------*/
+.drawing{
+  margin-top: 120px;
+}
+.drawing .carousel-inner {
+  padding: 0px 90px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #29A500;
+}
+.carousel-control-prev{
+  left: -30px;
+}
+.carousel-control-next {
+  right: -30px;
+}
+.carousel-indicators {
+  margin-bottom: 5rem;
+}
+.drawing-p{
+  margin-top: -55px;
+  text-align: center;
+}
+/*-------------------------------------креслення/-----------------------------------------*/
+/*------------------------------------про послуги-----------------------------------------*/
+.services-h2{
+  margin-top: 150px;
+}
+.services-text{
+  max-width: 720px;
+  margin: 0px auto;
+}
+.services-text>h2{
+  margin: 80px 0px 35px 0px;
+}
+.services-text-p{
+  margin-bottom: 0px;
+}
+.services-list{
+  display: flex;
+  flex-direction: column;
+}
+.services-ul-caption{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #29A500;
+}
+.services-list .about-li{
+  margin: 5px 0px;
+}
+/*------------------------------------про послуги/----------------------------------------*/
+/*-------------------------------------акордеон-------------------------------------------*/
+.services-accordion{
+  margin-bottom: 50px;
+  padding: 0px;
+}
+.accordion-header{
+  padding: 0;
+  background-color: #6F6F6F;
+}
+.accordion-button::after{
+  content:''; 
+  display: none;
+  background-color: #6F6F6F;
+} 
+ 
+.accordion-button{
+  width: 100%;
+  padding: 15px 150px 15px 60px;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  background-color: #6F6F6F;
+  border-color: #ffffff;
+}
+.accordion button:hover {
+  text-decoration: none;
+  color: #83E126;
+  background-color: #6F6F6F;
+}
+.accordion-button:focus{
+  text-decoration: none;
+  color: #83E126;
+  background-color: #6F6F6F;
+  box-shadow: none;
+  border: none;
+  border-bottom: #FFFFFF;
+}
+.accordion-button:not(.collapsed){
+  background-color: #6F6F6F;
+  border: none;
+  color: #fff;
+}
+/*--------------------------------------акордеон/-----------------------------------------*/
