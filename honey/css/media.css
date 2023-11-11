@@ -1,0 +1,163 @@
+@media (max-width: 1366px){
+.header__captain{
+    margin: 135px 0px 0px 180px;
+}
+.about,
+.gallery,
+.video,
+.cards,
+.contacts,
+.map,
+.footer{
+    margin-top: 200px;
+}
+}
+
+@media (max-width: 1024px){
+.header__captain{
+    margin: 150px 0px 0px 80px;
+  }
+.about,
+.gallery,
+.video,
+.cards,
+.contacts,
+.map,
+.footer{
+    margin-top: 150px;
+  }
+.gallery__h3{
+    margin-bottom: 40px;
+}
+.header__bg{
+    display: none;
+}
+.header__bg1024{
+    display: flex;
+}
+.header__bg744{
+    display: none;
+}
+.about__img{
+    padding: 0px 50px  
+}
+.cards__row-cards{
+    flex-direction: column;
+}
+}
+
+@media (max-width: 744px){
+.container{
+    margin: 0px 25px;
+}
+.header__captain{
+    margin: 80px 0px 0px 30px;
+    }
+.about,
+.gallery,
+.video,
+.cards,
+.contacts,
+.map,
+.footer{
+    margin-top: 90px;
+    }
+.header__bg{
+    display: none;
+    }
+.header__bg1024{
+    display: none;
+}
+.header__bg744{
+    display: flex;
+}
+.about__img{
+    padding: 0px 25px  
+}
+.gallery__h3{
+    margin-bottom: 15px;
+}
+.gallery .row{
+    display: flex;
+    flex-direction: column;
+}
+.gallery__item{
+    flex: 0 1 100%;
+}
+.footer__link{
+    flex-direction: column;
+}
+.footer__link-a{
+    margin: 10px;
+}
+.about__left{
+    margin-left: 30px;
+}
+}
+@media (max-width: 500px){
+    .container{
+        margin: 0px 20px;
+    }
+    .header__nav{
+        flex-direction: column;
+    }
+    .header__menu{
+        top: 30px;
+    }
+    .header__captain{
+        margin: 80px 0px 0px 40px;
+        }
+    .header__list{
+        margin-top: 20px;
+    }
+    .about,
+    .gallery,
+    .video,
+    .cards,
+    .contacts,
+    .map,
+    .footer{
+        margin-top: 60px;
+        }
+    .about__img{
+        padding: 0px 25px  
+    }
+    .gallery__h3{
+        margin-bottom: 15px;
+    }
+    .gallery .row{
+        display: flex;
+        flex-direction: column;
+    }
+.about__row{
+    position: relative;
+}
+.about__h2{
+    padding-top: 50px;
+}
+.about__right{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+.about__left{
+    flex: 0 1 100%;
+    margin-left: 0px;
+}
+.cards__up,
+.cards__down{
+    flex-direction: column;
+    flex: 0 1 100%
+}
+.footer__ul{
+    flex-wrap: wrap;
+}
+.footer__ul li{
+    padding: 10px 20px; 
+}
+.footer__li{
+    padding: 10px 20px;
+}
+}
